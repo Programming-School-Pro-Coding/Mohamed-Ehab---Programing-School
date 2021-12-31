@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    list-style: none;
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover {
+    color: #601cfc;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/Mohamed\ Ehab\ \(1\).gif) no-repeat #1C0529;
+    background-size: 1000px;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2,
+.main .auto {
+    color: #FFE3D8;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.main h2 span a {
+    text-decoration: none;
+    color: #4e9eff;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main .auto {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    overflow: hidden;
+}
+
+
+.main-btn,
+.main h3,
+.main h2,
+.main a,
+.main div {
+    align-items: center;
+    justify-content: center;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.social-icons a i {
+    transition: 0.5s;
+}
+
+.social-icons i:hover {
+    color: #56ff1f;
+    transform: rotate(360deg);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    /* border: 10px solid #1C0529; */
+    width: 500px;
+    align-items: center;
+    text-align: center;
+    margin-left: 230px;
+    background-color: transparent;
+}
+
+.subtitle {
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 26em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.575);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 35px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1) rotate(15deg);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+.contact .icon {
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+
+/* Start Footer */
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+/* End Footer */
+
+/* Start Media Queries */
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 0px;
+    }
+
+    .main {
+        padding: 80px 25px;
+    }
+
+    .main h2 {
+        font-size: 1em;
+    }
+
+    .main h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        margin-left: 120px;
+    }
+
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 9px;
+    }
+
+    .main h2 {
+        font-size: 0.8em;
+    }
+
+    .main h3 {
+        font-size: 1.4em;
+    }
+
+    .skills .container,
+    .skills .container .round,
+    .skills .container span {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+
+    }
+
+    .navigation a {
+        font-size: 10px;
+    }
+
+    .skills .container,
+    .skills .container .round,
+    .skills .container span {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width:320px) {
+    body {
+        font-size: 10px;
+
+    }
+
+    .navigation a {
+        font-size: 10px;
+    }
+
+    .main {
+        background: url("../images/Mohamed\ Ehab\ \(1\).gif") no-repeat #1C0529;
+        background-size: 500px;
+    }
+
+    .skills .container,
+    .skills .container .round,
+    .skills .container span {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width:330px),
+(max-width:340px),
+(max-width:350px),
+(max-width:360px),
+(max-width:320px) {
+    .navigation a {
+        font-size: 10px;
+        /* margin-left: 180px; */
+    }
+
+    .social-icons a {
+        font-size: 10px;
+    }
+
+    .skills .container,
+    .skills .container .round,
+    .skills .container span {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 10px;
+        margin-right: -500px;
+        margin-left: -85px;
+    }
+
+    .skills {
+        margin: 20px;
+    }
+
+    .skills .skill-info {
+        height: 100px;
+        width: auto;
+    }
+}
+
+/* End Media Queries */
+
+/* Start Contact Form */
+
+#overlay {
+    background: url("../images/mountains.jpg") no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.color {
+    background-color: rgba(255, 0, 106, 0.4);
+}
+
+form {
+    max-width: 550px;
+    width: 90%;
+    background-color: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+    transition: 0.3s ease-in-out;
+    margin: 10px 0;
+    background-color: #f1f1f1;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 1px solid rgba(255, 0, 0, 0.7);
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 0, 106);
+}
+
+.center {
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 15px;
+    border: 0;
+}
+
+input[type="submit"]:hover {
+    transform: rotate(15deg);
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.error {
+    color: red;
+}
+
+.error-border {
+    border-bottom: 1px solid red;
+}
+
+#success {
+    color: #28A745;
+    margin-top: 20px;
+}
+
+.error-send {
+    color: red;
+}
+
+.form {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ddd;
+}
+
+.form a {
+    margin-bottom: 20px;
+}
+
+
+.form a:nth-child(2) {
+    color: blue;
+}
+
+.form a:nth-child(3) {
+    color: cornflowerblue;
+}
+
+.form a:nth-child(4) {
+    color: crimson;
+}
+
+.form a:nth-child(5) {
+    color: red;
+}
+
+/* End Contact Form */
+
+.slider {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.my {
+    height: 1500px;
+}
+
+/* Start Skills */
+
+.html {
+    margin-left: 0%;
+}
+
+.css {
+    margin-left: 5%;
+}
+
+.js {
+    margin-left: 10%;
+}
+
+.php {
+    margin-left: 15%;
+}
+
+.python {
+    margin-left: 20%;
+}
+
+.skills {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-info {
+    margin: 20px;
+}
+
+.skills h3 {
+    text-align: left;
+}
+
+.skill-info h3 svg {
+    width: 25px;
+}
+
+
+/* End Skills */
